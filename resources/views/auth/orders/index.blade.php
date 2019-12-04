@@ -35,9 +35,13 @@
                     <td>{{ $order->getFullPrice() }} руб.</td>
                     <td>
                         <div class="btn-group" role="group">
-{{--                            TODO--}}
                             <a class="btn btn-success" type="button"
-                               href="">Открыть</a>
+                               @admin
+                               href="{{ route('orders.show', $order) }}"
+                               @else
+                               href="{{ route('person.orders.show', $order) }}"
+                               @endadmin
+                            >Открыть</a>
                         </div>
                     </td>
                 </tr>

@@ -28,8 +28,6 @@
                             </div>
                         </div>
                         <br>
-                        <input type="hidden" name="_token" value="m25o6D7zzBjQMsGCbfZWYRlWZYOa5W7r5lHkANGl">
-                        <br>
                         @csrf
                         <input type="submit" class="btn btn-success" value="Подтвердить заказ">
                     </div>
